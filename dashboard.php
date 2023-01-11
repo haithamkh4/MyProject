@@ -224,15 +224,15 @@ if(isset($_GET['from_date']) && isset($_GET['to_date']))
 
 
 <div class="row justify-content-evenly  mt-5">
-  <div class="col-3  shadow" style="background-color: white;">
-    <h6 class="mt-3 ms-3" style="color: darkgrey;">TOTAL ORDERS</h6>
+  <div class="col-3 card2 shadow" style="background-color: white;">
+    <h6 class="mt-3 ms-3 " style="color: darkgrey;">TOTAL ORDERS</h6>
     <h3 class="mt-3 mb-3 ms-3"><?php echo $leb_orders?></h3>
   </div>
 
 
-  <div class="col-3  shadow ms-5" style="background-color: white;">
+  <div class="col-3  card2 shadow ms-5" style="background-color: white;">
     <h6 class="mt-3 ms-3" style="color: darkgrey;">TOTAL EARNINGS</h6>
-    <h3 class="mt-3 mb-3 ms-3"><?php echo $sum?> LBP   </h3>
+    <h3 class="mt-3 mb-3 ms-3"><?php echo number_format($sum);?> LBP   </h3>
   </div>
 
 </div>
@@ -240,27 +240,27 @@ if(isset($_GET['from_date']) && isset($_GET['to_date']))
 
 
 <div class="row justify-content-evenly  mt-5">
-  <div class="col-2  shadow mt-5" style="background-color: white;">
+  <div class="col-2 card2 shadow mt-5" style="background-color: white;">
     <h6 class="mt-3 ms-2" style="color: green;text-align:center">DELIVERED ORDERS</h6>
     <h3 class="mt-3 mb-3" style="text-align: center;color:green"><?php echo $delivered_orders?></h3>
   </div>
 
-  <div class="col-2  shadow mt-5" style="background-color: white;">
+  <div class="col-2 card2 shadow mt-5" style="background-color: white;">
     <h6 class="mt-3 ms-2" style="color: red;text-align:center">CANCELED ORDERS</h6>
     <h3 class="mt-3 mb-3" style="text-align: center; color:red"><?php echo $canceled_orders?></h3>
   </div>
 
-  <div class="col-2  shadow mt-5" style="background-color: white;">
+  <div class="col-2 card2 shadow mt-5" style="background-color: white;">
     <h6 class="mt-3 " style="color: blue; text-align:center">NEW ORDERS</h6>
     <h3 class="mt-3 mb-3" style="text-align: center; color:blue"><?php echo $new_orders?></h3>
   </div>
 
-  <div class="col-2  shadow mt-5" style="background-color: white;">
+  <div class="col-2 card2 shadow mt-5" style="background-color: white;">
     <h6 class="mt-3 ms-2" style="color: purple;text-align:center">DELAYED ORDERS</h6>
     <h3 class="mt-3 mb-3" style="text-align: center;color:purple"><?php echo $delayed_orders?></h3>
   </div>
 
-  <div class="col-2  shadow mt-5" style="background-color: white;">
+  <div class="col-2 card2 shadow mt-5" style="background-color: white;">
     <h6 class="mt-3 ms-2" style="color: purple;text-align:center">ONGOING ORDERS</h6>
     <h3 class="mt-3 mb-3" style="text-align: center;color:purple"><?php echo $delayed_orders?></h3>
   </div>
